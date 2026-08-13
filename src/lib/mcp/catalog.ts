@@ -94,7 +94,7 @@ export const offers = [
 ];
 
 export const contact = {
-  brand: "AlexGoa",
+  brand: "Marhaba",
   whatsapp: "https://wa.me/919999999999",
   support: "24x7 WhatsApp support",
   note: "18+ only. Please play responsibly.",

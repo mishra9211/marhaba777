@@ -15,7 +15,7 @@
       {
         "name": "list_panels",
         "title": "List panels",
-        "description": "List the publicly advertised AlexGoa panel sites by category (semi, b2b, b2c). Omit the category to get all of them.",
+        "description": "List the publicly advertised Marhaba panel sites by category (semi, b2b, b2c). Omit the category to get all of them.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -59,7 +59,7 @@
       {
         "name": "list_currencies",
         "title": "List currencies",
-        "description": "List every currency AlexGoa panels can be set up in.",
+        "description": "List every currency Marhaba panels can be set up in.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -89,7 +89,7 @@
       {
         "name": "get_offers",
         "title": "Get current offers",
-        "description": "Get the current AlexGoa offers, such as the free cricket schedule banner and the B2C commission system.",
+        "description": "Get the current Marhaba offers, such as the free cricket schedule banner and the B2C commission system.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -134,7 +134,7 @@
       {
         "name": "get_contact",
         "title": "Get contact details",
-        "description": "Get the public AlexGoa contact and support details, including the WhatsApp link.",
+        "description": "Get the public Marhaba contact and support details, including the WhatsApp link.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,

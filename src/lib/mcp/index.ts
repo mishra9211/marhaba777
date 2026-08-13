@@ -9,6 +9,6 @@ export default defineMcp({
   title: "B2B & B2C Launchpad",
   version: "0.1.0",
   instructions:
-    "Public catalog tools for AlexGoa's B2B and B2C panel business. Use `list_panels` for SEMI/B2B/B2C site listings, `list_currencies` for supported currencies, `get_offers` for current promotions, and `get_contact` for support details.",
+    "Public catalog tools for Marhaba's B2B and B2C panel business. Use `list_panels` for SEMI/B2B/B2C site listings, `list_currencies` for supported currencies, `get_offers` for current promotions, and `get_contact` for support details.",
   tools: [listPanelsTool, listCurrenciesTool, getOffersTool, getContactTool],
 });

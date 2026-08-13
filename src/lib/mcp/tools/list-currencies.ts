@@ -5,7 +5,7 @@ import { currencies } from "../catalog";
 export default defineTool({
   name: "list_currencies",
   title: "List currencies",
-  description: "List every currency AlexGoa panels can be set up in.",
+  description: "List every currency Marhaba panels can be set up in.",
   inputSchema: {},
   outputSchema: { currencies: z.array(z.string()) },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },

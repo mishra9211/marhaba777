@@ -6,7 +6,7 @@ export default defineTool({
   name: "list_panels",
   title: "List panels",
   description:
-    "List the publicly advertised AlexGoa panel sites by category (semi, b2b, b2c). Omit the category to get all of them.",
+    "List the publicly advertised Marhaba panel sites by category (semi, b2b, b2c). Omit the category to get all of them.",
   inputSchema: {
     category: z
       .enum(["semi", "b2b", "b2c"])

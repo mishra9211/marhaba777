@@ -184,13 +184,13 @@ function FloatingWhatsApp() {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AlexGoa — B2B & B2C Panel Solutions" },
+      { title: "Marhaba — B2B & B2C Panel Solutions" },
       {
         name: "description",
         content:
           "Premium B2B master panels and B2C player IDs with instant setup, 24x7 support and fast settlements.",
       },
-      { property: "og:title", content: "AlexGoa — B2B & B2C Panel Solutions" },
+      { property: "og:title", content: "Marhaba — B2B & B2C Panel Solutions" },
       {
         property: "og:description",
         content:
@@ -541,7 +541,7 @@ function Index() {
 
       <footer className="border-t border-border py-8">
         <div className="mx-auto max-w-6xl px-5 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} AlexGoa. 18+ only. Please play responsibly.
+          © {new Date().getFullYear()} Marhaba. 18+ only. Please play responsibly.
         </div>
       </footer>
 

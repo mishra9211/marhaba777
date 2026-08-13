@@ -6,7 +6,7 @@ export default defineTool({
   name: "get_offers",
   title: "Get current offers",
   description:
-    "Get the current AlexGoa offers, such as the free cricket schedule banner and the B2C commission system.",
+    "Get the current Marhaba offers, such as the free cricket schedule banner and the B2C commission system.",
   inputSchema: {},
   outputSchema: { offers: z.array(z.object({ title: z.string(), details: z.array(z.string()) })) },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
