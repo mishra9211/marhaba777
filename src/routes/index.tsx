@@ -272,7 +272,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="#top" className="text-lg font-black tracking-[0.2em]">
-            ALEX<span className="text-primary">GOA</span>
+            Mar<span className="text-primary">haba</span>
           </a>
           <nav className="hidden items-center gap-8 text-xs font-semibold tracking-[0.18em] text-muted-foreground md:flex">
             <a href="#semi" className="story-link transition-colors hover:text-primary">SEMI</a>
