@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.2",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "b2b-b2c-launchpad",
+      "version": "0.1.0",
+      "title": "B2B & B2C Launchpad"
+    },
+    "tools": [
+      {
+        "name": "list_panels",
+        "title": "List panels",
+        "description": "List the publicly advertised AlexGoa panel sites by category (semi, b2b, b2c). Omit the category to get all of them.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "description": "Panel category to filter by. Omit for all categories.",
+              "type": "string",
+              "enum": [
+                "semi",
+                "b2b",
+                "b2c"
+              ]
+            }
+          }
+        },
+        "outputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "categories": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {}
+              }
+            }
+          },
+          "required": [
+            "categories"
+          ]
+        }
+      },
+      {
+        "name": "list_currencies",
+        "title": "List currencies",
+        "description": "List every currency AlexGoa panels can be set up in.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "currencies": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "currencies"
+          ]
+        }
+      },
+      {
+        "name": "get_offers",
+        "title": "Get current offers",
+        "description": "Get the current AlexGoa offers, such as the free cricket schedule banner and the B2C commission system.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "offers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "details": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "title",
+                  "details"
+                ]
+              }
+            }
+          },
+          "required": [
+            "offers"
+          ]
+        }
+      },
+      {
+        "name": "get_contact",
+        "title": "Get contact details",
+        "description": "Get the public AlexGoa contact and support details, including the WhatsApp link.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "brand": {
+              "type": "string"
+            },
+            "whatsapp": {
+              "type": "string"
+            },
+            "support": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "brand",
+            "whatsapp",
+            "support",
+            "note"
+          ]
+        }
+      }
+    ]
+  }
+}
