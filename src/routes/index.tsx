@@ -153,7 +153,6 @@ function FloatingVideo() {
         src={PROMO_VIDEO}
         className="h-full w-full object-cover"
         autoPlay
-        muted
         loop
         playsInline
         controls
